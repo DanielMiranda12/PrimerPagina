@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(/Multimedia/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(90deg, rgb(223, 223, 228), rgb(9, 9, 8));
+
+    opacity: 0.3;
+    z-index: -1;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+nav a{
+    font-weight: 100;
+    padding-right: 10px;
+}
+/* 
+nav a:hover{
+    color: black;
+} */
+
+header{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    background-color: rgb(129, 128, 128);
+    align-items: center;
+    padding: 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo img{
+    height: 100px;
+}
+
+
+.title2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifs;
+    font-size: 150%;
+}
+
+.texto{
+    /* background: blue; */
+    color: aliceblue;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 50%;
+    margin-top: 5%;
+}
+
+.imagen{
+/* background: red; */
+padding: 10px;
+margin-right: 60%;
+margin-left: 10%;
+margin-top: -22%;
+}
+
+.PRECIO{
+    text-align: left;
+}
+
+
+
+ @media (min-width: 800px) and (max-width: 1200px){
+    header{
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 10px;
+    }
+    body{
+        background-image: url(/Multimedia/fondo.jpg);
+    }
+}
+@media (max-width: 799px){
+    body{
+        background-image: url(/Multimedia/fondo.jpg) ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
